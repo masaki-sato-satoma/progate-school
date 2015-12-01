@@ -11,10 +11,12 @@ header{
 	height: 50px;
 	width: 100%;
 	background-color: white;
+	border-bottom: 1px solid #b3aeb5;
 	position: fixed;
     top: 0px;
     left: 0px;
     z-index: 10;
+
 }
 
 .header-left{
@@ -26,7 +28,6 @@ header{
 .header-left h4{
     font-weight: 600;
     cursor: pointer;
-
 }
 
 .header-left h4:hover{
@@ -38,7 +39,6 @@ header{
 	padding-right: 60px;
 	line-height: 50px;
 	margin-right: 40px;
-	
  }
 
 .header-right li{
@@ -82,33 +82,110 @@ header{
 }
 
 .message p{
-    color: white;
+	color: white;
     font-size: 18px;
     margin-bottom: 50px;
     z-index: 2;
 }
 
 .btn-more{
-    width: 140px;
-    height: 40px;
+	color: white;
+    opacity: 0.7;
+    padding: 20px 20px;
+    width: 120px;
+    margin-left: 600px;
     border: 1px solid white;
-    display: inline-block;
-    opacity: 0.5;
-    z-index: 2;
-}
-.btn-more:hover{
-     opacity: 1;
-     cursor: pointer;
-     z-index: 2;
+    cursor: pointer;
 }
 
-.more {
-	position: absolute;
-	top: 350px;
-	left: 635px;
-	display: block;
-	color: white;
-    font-size: 20px;
-    font-weight: 900;
-    z-index: 2;
+.btn-more:hover{
+    opacity: 1;
+    border: 1.5px solid white;
+    color: white;
+}
+
+.language{
+    height: 740px;
+    text-align: center;
+}
+
+.language img{
+    margin-bottom: 10px
+}
+
+.language h5{
+	margin-bottom: 20px;
+}
+
+.language-head{
+	padding-top: 40px;
+	padding-bottom: 30px;
+	letter-spacing: 2px;
+}
+
+.html{
+     float: left;
+     padding-left: 280px;
+}	
+
+.js{
+	float: left;
+	padding-left: 140px;	
+}
+
+.language-bottom{
+    height: 100px;
+    background-color: red;
+}
+
+.jquery{
+    float:  left;
+    padding-left: 205px;
+    padding-top: 50px;
+}
+
+.git{
+	float: left;
+	padding-left: 40px;
+	padding-top: 50px;
+}
+
+.future-head{
+	background-color: #f7f7f7;
+	height: 350px;
+	padding-top: 30px;
+	text-align: center;
+}
+
+.future-txtcontents{
+	background-color: white;
+	height: 400px;
+}
+
+.fast{
+   float: left;
+   padding-top: 120px;
+   padding-left: 210px;
+   width: 630px;
+}
+
+.second{
+   float: right;
+   padding-right: 210px;
+   padding-top: 120px;
+   width: 670px;
+}
+
+.third{
+   float: left;
+   padding-top: 20px;
+   padding-left: 210px;
+   width: 630px;
+ }
+
+.fourth{
+   float: right;
+   padding-right: 210px;
+   padding-top: 20px;
+   width: 670px;
 }
