@@ -1,0 +1,114 @@
+body{
+margin: 0;
+}
+
+li{
+ list-style: none;
+}
+
+
+header{
+	height: 50px;
+	width: 100%;
+	background-color: white;
+	position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+}
+
+.header-left{
+	float: left;
+	padding-left: 90px;
+	padding-top: 10px;
+}
+
+.header-left h4{
+    font-weight: 600;
+    cursor: pointer;
+
+}
+
+.header-left h4:hover{
+	color: #00ced1;
+}
+
+.header-right{
+	float: right;
+	padding-right: 60px;
+	line-height: 50px;
+	margin-right: 40px;
+	
+ }
+
+.header-right li{
+	float: left; 
+	padding-right: 20px;
+    font-size: 14px;
+    font-weight: 900;
+    letter-spacing: 0.3px;
+    cursor: pointer;
+}
+
+.header-right li:hover{
+	color: #00ced1;
+}
+
+.top-wrapper{
+	background-image: url(images/images/backgrounds/top.jpg);
+	background-size: cover;
+	height: 550px;
+    text-align: center;
+    position: relative;
+}
+
+.background{
+	z-index: 1;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color:rgba(0,0,0,0.6);
+}
+
+.message h3{
+	padding-top: 175px;
+	color: white;
+    font-size: 50px;
+    font-weight: normal;
+    margin-bottom: 20px;
+    z-index: 2;
+}
+
+.message p{
+    color: white;
+    font-size: 18px;
+    margin-bottom: 50px;
+    z-index: 2;
+}
+
+.btn-more{
+    width: 140px;
+    height: 40px;
+    border: 1px solid white;
+    display: inline-block;
+    opacity: 0.5;
+    z-index: 2;
+}
+.btn-more:hover{
+     opacity: 1;
+     cursor: pointer;
+     z-index: 2;
+}
+
+.more {
+	position: absolute;
+	top: 350px;
+	left: 635px;
+	display: block;
+	color: white;
+    font-size: 20px;
+    font-weight: 900;
+    z-index: 2;
+}
