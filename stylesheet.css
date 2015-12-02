@@ -192,7 +192,7 @@ header{
 
 .course{
 	background-color: #f7f7f7;
-	height: 1000px;
+	height: 880px;
 	text-align: center;
 	padding-top: 60px;
 }
@@ -287,6 +287,57 @@ padding-top: 30px;
 }
 
 .plan-month h2{
-	color: white;
+  color: white;
   padding-top: 30px;
+}
+
+.mantors p{
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.mantors h4{
+	text-align: center;
+	padding-top: 10px;
+	line-height: 25px;
+}
+.mentor{
+	background-color: white;
+	height: 1000px
+}
+
+.mentor h2{
+	padding-top: 60px;
+	text-align: center;
+}
+
+.mentor img{
+	border-radius: 50%;
+	display: block;
+    margin: 0 auto;
+    height: 200px;
+}
+
+.mantor-facebook{
+     background-image: url(images/images/backgrounds/night_view.jpg);
+     height: 370px;
+     background-size: cover;
+     position: relative;
+}
+
+.background-facebook{
+    z-index: 1;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color:rgba(0,0,0,0.6);
+}
+
+.facebook{
+	text-align: center;
+	padding-top: 185px;
+	z-index: 2;
+	color: white;
 }
