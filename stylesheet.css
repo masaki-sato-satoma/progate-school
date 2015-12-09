@@ -6,6 +6,12 @@ li{
  list-style: none;
 }
 
+a {
+ color: #696969;
+ text-decoration: none;
+ transition: 0.3s;
+}
+
 
 header{
 	height: 50px;
@@ -13,9 +19,9 @@ header{
 	background-color: white;
 	border-bottom: 1px solid #b3aeb5;
 	position: fixed;
-    top: 0px;
-    left: 0px;
-    z-index: 10;
+  top: 0px;
+  left: 0px;
+  z-index: 10;
 
 }
 
@@ -23,21 +29,23 @@ header{
 	float: left;
 	padding-left: 90px;
 	padding-top: 10px;
+  color: #696969;
+  font-size: 22px;
+  font-weight: 900;
+  cursor: pointer;
+  transition: 0.8s;
+  font-family: 'Tahoma';
 }
 
-.header-left h4{
-    font-weight: 600;
-    cursor: pointer;
-}
 
-.header-left h4:hover{
+.header-left:hover{
 	color: #00ced1;
 }
 
 .header-right{
 	float: right;
 	padding-right: 60px;
-	line-height: 50px;
+	line-height: 20px;
 	margin-right: 40px;
  }
 
@@ -46,20 +54,21 @@ header{
 	padding-right: 20px;
     font-size: 14px;
     font-weight: 900;
-    letter-spacing: 0.3px;
     cursor: pointer;
+    
 }
 
-.header-right li:hover{
+.header-right a:hover{
 	color: #00ced1;
-}
+	}
 
 .top-wrapper{
-	background-image: url(images/images/backgrounds/top.jpg);
+	background-image: url(images/backgrounds/top.jpg);
 	background-size: cover;
 	height: 550px;
-    text-align: center;
-    position: relative;
+  text-align: center;
+  position: relative;
+  color: white;
 }
 
 .background{
@@ -74,7 +83,6 @@ header{
 
 .message h3{
 	padding-top: 175px;
-	color: white;
     font-size: 50px;
     font-weight: normal;
     margin-bottom: 20px;
@@ -82,26 +90,37 @@ header{
 }
 
 .message p{
-	color: white;
     font-size: 18px;
     margin-bottom: 50px;
     z-index: 2;
 }
 
 .btn-more{
-	color: white;
-    opacity: 0.7;
-    padding: 20px 20px;
-    width: 120px;
+	  color: white;
+    background-color: rgba(80,80,80,0.5);
+    padding: 13px 13px;
+    width: 100px;
     margin-left: 600px;
-    border: 1px solid white;
     cursor: pointer;
+    font-weight: bold;
+    font-size: 18px;
+    border: 1px solid rgba(130,130,130,0.5);
+    transition: 0.8s;
 }
 
 .btn-more:hover{
-    opacity: 1;
-    border: 1.5px solid white;
-    color: white;
+    border: 1px solid white;
+}
+
+.btn-more-message{
+    width: 1170px;
+    padding-top: 20px;
+    padding-left: 90px;
+    display: none;
+}
+
+.btn-more-message p{
+   font-size: 14px
 }
 
 .language{
@@ -125,7 +144,7 @@ header{
 
 .html{
      float: left;
-     padding-left: 280px;
+     padding-left: 350px;
 }	
 
 .js{
@@ -140,7 +159,7 @@ header{
 
 .jquery{
     float:  left;
-    padding-left: 205px;
+    padding-left: 270px;
     padding-top: 50px;
 }
 
@@ -157,6 +176,9 @@ header{
 	text-align: center;
 }
 
+.future-head img{
+     padding-top: 30px;
+}
 .future-txtcontents{
 	background-color: white;
 	height: 400px;
@@ -165,29 +187,29 @@ header{
 .fast{
    float: left;
    padding-top: 120px;
-   padding-left: 210px;
-   width: 630px;
+   padding-left: 160px;
+   width: 500px;
 }
 
 .second{
    float: right;
-   padding-right: 210px;
+   padding-right: 170px;
    padding-top: 120px;
-   width: 670px;
+   width: 500px;
 }
 
 .third{
    float: left;
    padding-top: 20px;
-   padding-left: 210px;
-   width: 630px;
+   padding-left: 160px;
+   width: 500px;
  }
 
 .fourth{
    float: right;
-   padding-right: 210px;
+   padding-right: 170px;
    padding-top: 20px;
-   width: 670px;
+   width: 500px;
 }
 
 .course{
@@ -243,6 +265,7 @@ padding-top: 30px;
    background-color: #1f3134;
    display: inline-block;
    opacity: 0.9;
+   transition: 0.5s;
 }
 
 .course-btn:hover{
@@ -322,7 +345,7 @@ padding-top: 30px;
 }
 
 .mantor-facebook{
-     background-image: url(images/images/backgrounds/night_view.jpg);
+     background-image: url(images/backgrounds/night_view.jpg);
      height: 370px;
      background-size: cover;
      
@@ -369,6 +392,7 @@ padding-top: 30px;
 
 .btn-white{
     background-color: white;
+    transition: all 0.5s;
 }
 .btn-white:hover{
 	color: white;
@@ -401,6 +425,7 @@ padding-top: 30px;
     font-weight: bold;
     color: black;
     padding-top: 20px;
+    transition: 0.5s;
 }
 
 .column-contents p{
@@ -427,7 +452,7 @@ padding-top: 30px;
     font-weight: bold;
     color: black;
     padding-top: 20px;
-
+    transition: 0.5s;
 }
 
 .column-contents-right p{
@@ -458,6 +483,7 @@ padding-top: 30px;
      display: inline-block;
      margin-top: 50px;
      opacity: 0.9;
+     transition: 0.5s;
 }
 
 .column-bottom:hover{
@@ -465,7 +491,7 @@ padding-top: 30px;
 }
 
 .information{
-	background-image: url(images/images/backgrounds/contact.jpg);
+	background-image: url(images/backgrounds/contact.jpg);
 	background-size: cover;
 	height: 700px;
 }
@@ -568,7 +594,7 @@ padding-top: 30px;
     background-color: white;
     padding-top: 50px;
     margin-bottom: 40px;
-
+   color: black;
 }
 
 .bottom{
