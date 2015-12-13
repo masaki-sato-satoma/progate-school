@@ -4,9 +4,10 @@
     <meta charset="utf-8">
     <title>HTML LESSON</title>
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
-
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 </head>
 <body>
 
@@ -45,21 +46,22 @@
    
 <div class="language" id="language">
   <div class="container">
+  
 
      <div class="language-head">
-     	<h2>学習する言語</h2>
+     <div>学習する言語</div>
      </div>
-
-      <div class="lunguage-top">
+   
+      
 
 　　　　　　　<div class="html">
            <div class="html-icon">
              <img src="images/lang_icons/html.png">
 	       </div>
 	       <div class="html-txtcontants">
-	       	<h5>html & css</h5>
-	       	<p>Webページの見た目をつくる言語</p>
-	       </div>
+	       	<div class="language-title">HTML & CSS</div>
+	       	<div class="language-mean">Webページの見た目をつくる言語</div>
+	       </div>	
 	    </div>
 
        <div class="js">
@@ -67,21 +69,21 @@
              <img src="images/lang_icons/js.png">
 	       </div>
 	       <div class="js-txtcontants">
-	       	<h5>Javascript</h5>
-	       	<p>動的なウェブサイト構築に用いるプログラミング言語</p>
+	       	<div class="language-title">Javascript</div>
+	       	<div class="language-mean">動的なウェブサイト構築に用いるプログラミング言語</div>
 	       </div>
         </div>
 
-     </div>
+  
      
-     <div　class="lunguage-bottom">
+     
      	<div class="jquery">
      		<div class="jquery-icon">
              <img src="images/lang_icons/jquery.png">
 	       </div>
 	       <div class="jquery-txtcontants">
-	       	<h5>jquery</h5>
-	       	<p>We効果やアニメーションを実装できるJavascriptライブラリ</p>
+	       	<div class="language-title">jQuery</div>
+	       	<div class="language-mean">効果やアニメーションを実装できるJavascriptライブラリ</div>
 	       </div>
 	    </div>
      	
@@ -90,11 +92,10 @@
              <img src="images/lang_icons/git.png">
 	       </div>
 	       <div class="git-txtcontants">
-	       	<h5>git</h5>
-	       	<p>ソースコードのバージョン管理、共同開発を可能にするツール</p>
+	       	<div class="language-title">Git</div>
+	       	<div class="language-mean">ソースコードのバージョン管理、共同開発を可能にするツール</div>
 	       </div>
 	    </div>
-     </div>
 
  </div>
 </div>
@@ -171,33 +172,53 @@
 
 
 
-<div class="mentor ">
+<div class="mentor">
 	<h2>メンター紹介</h2>
 
-　　<div class="mantors">
+　
 
-	<div class="mantor_1">
-		<img src="images/mentors/mentor_1.jpg">
-		<h4>プログラミングサークルでの活動や受託を通じてスキルを磨く。その後は複数のスタートアップに協力しながらプロ<br>グラミングを教えるようになり、これをオンラインのサービスとして提供したいと思い、２０１４年７月に株式会社<br>
+
+
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    
+    <div class="item active">
+      <img src="images/mentors/mentor_1.jpg">
+        <h4>プログラミングサークルでの活動や受託を通じてスキルを磨く。その後は複数のスタートアップに協力しながらプログラミングを教えるようになり、これをオンラインのサービスとして提供したいと思い、２０１４年７月に株式会社
 		ＰＲＯＧＡＴＥを創業、現代表取締役。</h4>
 		<p>-加藤将倫</p>
     </div>
-　　　　　
-　　　　<div class="mantor_2">
-	   <img src="images/mentors/mentor_2.jpg">
-		<h4>３年生の秋にエンジニアを集めるために東大プログラミングサークル「ＺＥＲＯＸＯＮＥ」をたちあげる。自分の人生は<br>プログラミングを身につけたことによって劇的に変わりました。みんなにも同じ体験をしてもらいたくてＰＲＯＧＡＴＥを<br>作っています！</h4>
+
+    <div class="item">
+      <img src="images/mentors/mentor_2.jpg">
+        <h4>３年生の秋にエンジニアを集めるために東大プログラミングサークル「ＺＥＲＯＸＯＮＥ」をたちあげる。自分の人生はプログラミングを身につけたことによって劇的に変わりました。みんなにも同じ体験をしてもらいたくてＰＲＯＧＡＴＥを作っています！</h4>
 		<p>-村井謙太</p>
-     </div>
-
-     <div class="mantor_3">
-     	<img src="images/mentors/mentor_3.jpg">
-		<h4>ＰＲＯＧＡＴＥではＵＩ/ＵＸを担当。ユーザーに夢中で楽しんでもらえるようなサービス設計、学びによって人生を豊かにで<br>きるようなサービスを目指し、日々プロダクト改善に取り組んでいる。テクノロジー・デザイン・ビジネスの分野<br>で、領域横断的に活動し、人々がワクワクして止まないモノを生み出せる人間で在りたいと思う。</h4>
+    </div>
+    
+    <div class="item">   
+      <img src="images/mentors/mentor_3.jpg">
+        <h4>ＰＲＯＧＡＴＥではＵＩ/ＵＸを担当。ユーザーに夢中で楽しんでもらえるようなサービス設計、学びによって人生を豊かにできるようなサービスを目指し、日々プロダクト改善に取り組んでいる。テクノロジー・デザイン・ビジネスの分野で、領域横断的に活動し、人々がワクワクして止まないモノを生み出せる人間で在りたいと思う。</h4>
 		<p>-神田美智</p>
-     </div>
+    </div>
 
-   </div>
+  </div>
+  
+</div>
+</div>
 
-     <div class="mantor-facebook">
+
+
+
+
+     <div class="mentor-facebook">
        <div class="background-facebook">
         <div class="facebook">
 		  <h3>プログラミングを学ぶのなら、生涯仕事に困らないことを私が保証しよう。</h3>
@@ -207,56 +228,58 @@
 	 </div>
 
   
- </div>
+ 
 
 
 <div class="column" id="column">
   <h1>コラム</h1>
   
 	<div class="column-top-btn">
-		<ul>
-			<li class="show-all">show all</li>
-			<li class="btn-white">コラム</li>
-			<li class="btn-white">プログラミングTips</li>
+		<ul id="column-list">
+			<li class="column-list show-all active-active">show all</li>
+			<li class="column-list column-column-list">コラム</li>
+			<li class="column-list program-program">プログラミングTips</li>
 		</ul>
 	</div>
   
-	<div class="column-contents">
-	  <img src="images/portfolio/programmer.jpg">
-	  <div>20代のエンジニアが初めての転職でつまずきやすい点</div>
+	<div class="column-contents column-column">
+      <div class="image-wrapper">
+        <div class="column-background"></div>
+        <img src="images/portfolio/programmer.jpg" id="column1">
+	  </div>
+      <div class="column-text">20代のエンジニアが初めての転職でつまずきやすい点</div>
       <p>コラム</p>
 	</div>
 
-	<div class="column-contents-right">
+	<div class="column-contents-right program program-adjast">
 	  <img src="images/portfolio/html5.jpg">
-	  <div>HTML5の新タグについて
-      </div>
+	  <div class="column-text">HTML5の新タグについて</div>
       <p>HTML</p>
 	</div>
 
-	<div class="column-contents">
+	<div class="column-contents program program-adjast-adjast">
 	  <img src="images/portfolio/js.jpg">
-	  <div>Javascriptの文法まとめ</div>
+	  <div class="column-text">Javascriptの文法まとめ</div>
       <p>Javascript</p>
 	</div>
 
-	<div class="column-contents-right">
+	<div class="column-contents-right column-column">
 	  <img src="images/portfolio/books.jpg">
-	  <div>新卒ソフトウェアエンジニアのための技術書100冊
+	  <div class="column-text">新卒ソフトウェアエンジニアのための技術書100冊
       </div>
       <p>コラム</p>
 	</div>
 
-	<div class="column-contents">
+	<div class="column-contents column-column player">
 	  <img src="images/portfolio/engineer.jpg">
-	  <div>「プレイヤーでも年収1000万円に」エンジニアの評価制度
+	  <div class="column-text">「プレイヤーでも年収1000万円に」エンジニアの評価制度
       </div>
       <p>コラム</p>
 	</div>
 
-	<div class="column-contents-right">
+	<div class="column-contents-right program program-adjast-third">
 	  <img src="images/portfolio/inspect.jpg">
-	  <div>要素の検証をしてみよう
+	  <div class="column-text">要素の検証をしてみよう
       </div>
       <p>HTML / CSS</p>
 	</div>

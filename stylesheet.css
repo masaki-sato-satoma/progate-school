@@ -126,48 +126,54 @@ header{
 .language{
     height: 740px;
     text-align: center;
+    padding-top: 15px;
 }
 
 .language img{
     margin-bottom: 10px
 }
 
-.language h5{
-	margin-bottom: 20px;
-}
-
 .language-head{
-	padding-top: 40px;
-	padding-bottom: 30px;
-	letter-spacing: 2px;
+  margin-top: -50px;
+  margin-top: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: #696969;
+  font-weight: bold;
+  font-size: 30px;
 }
 
+.language-title{
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.language-mean{
+  font-size: 15px;
+  color: #696969;
+  width: 370px;
+}
 .html{
      float: left;
-     padding-left: 350px;
-}	
+     padding-left: 300px;
+  }	
 
 .js{
-	float: left;
-	padding-left: 140px;	
-}
-
-.language-bottom{
-    height: 100px;
-    background-color: red;
-}
+	   float: left;
+	   padding-left: 30px;	
+        }
 
 .jquery{
-    float:  left;
-    padding-left: 270px;
+    float: left;
+    padding-left: 300px;
     padding-top: 50px;
-}
-
+    
+   }
 .git{
 	float: left;
-	padding-left: 40px;
+	padding-left: 30px;
 	padding-top: 50px;
-}
+    }
+
 
 .future-head{
 	background-color: #f7f7f7;
@@ -314,37 +320,48 @@ padding-top: 30px;
   padding-top: 30px;
 }
 
-.mantors p{
+.mentor p{
 	text-align: center;
 	margin-bottom: 40px;
 	display: block;
 }
 
 
-.mantors h4{
-	text-align: center;
+.item h4{
 	padding-top: 10px;
 	line-height: 25px;
 	display: block;
 }
 .mentor{
 	background-color: white;
-	height: 1585px
+	height: 500px
 }
 
-.mentor h2{
+.item h2{
 	padding-top: 60px;
 	text-align: center;
 }
 
-.mentor img{
+.carousel-inner img{
 	border-radius: 50%;
-	display: block;
-    margin: 0 auto;
-    height: 200px;
+	margin: 0 auto;
+  width: 200px;
+
 }
 
-.mantor-facebook{
+.carousel{
+  height: 400px;
+}
+
+.carousel-indicators li {
+  background-color: #999 !important;
+  background-color: rgba(70,70,70,.25) !important;
+}
+
+.carousel-indicators .active {
+  background-color: #444 !important;
+}
+.mentor-facebook{
      background-image: url(images/backgrounds/night_view.jpg);
      height: 370px;
      background-size: cover;
@@ -352,7 +369,6 @@ padding-top: 30px;
 }
 
 .background-facebook{
-    z-index: 1;
 	height: 370px;
 	background-color:rgba(0,0,0,0.6);
 }
@@ -379,7 +395,6 @@ padding-top: 30px;
     margin-left: 450px;
     font-size: 15px;
     font-weight: bold;
-    color: black;
     height: 90px;
     margin-bottom: -20px;
 }
@@ -390,17 +405,18 @@ padding-top: 30px;
 	padding: 10px 20px;
 }
 
-.btn-white{
+.column-list{
+    color: black;
     background-color: white;
     transition: all 0.5s;
 }
-.btn-white:hover{
+.column-list:hover{
 	color: white;
 	background-color: #00ced1;
 	cursor: pointer;
 }
 
-.show-all{
+.active-active{
     color: white;
     background-color: #00ced1; 
 }
@@ -415,12 +431,35 @@ padding-top: 30px;
     float: left;
 }
 
-.column-contents img{
-	margin-top: 5px;
-	width: 470px;
-    height: 260px;
+.image-wrapper{
+  margin-top: 5px;
+  margin-left: 5px;
+  width: 470px;
+  height: 260px;
+  overflow: hidden;
+  position: relative;
 }
-.column-contents div{
+
+.column-background{
+  background-color: rgba(0,0,0,0.6);
+  width: 470px;
+  height: 260px;
+  position: absolute;
+  top:0;
+  left: 0;
+  z-index: 1;
+  display: none;
+
+}
+
+#column1{
+  width: 470px;
+  height: 260px;
+  transition: all 0.5s ease;
+  
+}
+
+.column-text{
 	font-size: 18px;
     font-weight: bold;
     color: black;
@@ -443,12 +482,12 @@ padding-top: 30px;
 }
 
 .column-contents-right img{
-	margin-top: 5px;
-	width: 470px;
+	  margin-top: 5px;
+	  width: 470px;
     height: 260px;
 }
 .column-contents-right div{
-	font-size: 18px;
+	  font-size: 18px;
     font-weight: bold;
     color: black;
     padding-top: 20px;
