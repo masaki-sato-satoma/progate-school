@@ -58,18 +58,18 @@ $(function(){
     	$('.column').css('height','1500px');
 
     });
-
+    //コラムのイメージにホバーした時のイベント
      $('.image-wrapper').hover(
      	function(){
-        $('#column1').css('transform','scale(1.15,1.15)');
-        $('.column-background').fadeIn();
+        $(this).find('img').css('transform','scale(1.15,1.15)');
+        $(this).find('.column-background').fadeIn();
         },
          function(){
-          $('#column1').css('transform','scale(1,1)');
-          $('.column-background').fadeOut();
+          $(this).find('img').css('transform','scale(1,1)');
+          $(this).find('.column-background').fadeOut();
      });
-        
-  
-
+      
+     
+　　　　
 	}); 
 
