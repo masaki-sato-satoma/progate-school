@@ -69,7 +69,18 @@ $(function(){
           $(this).find('.column-background').fadeOut();
      });
       
-     
-　　　　
+     $("input[type='button']").click(function(){
+         if($('form input[id="mail"]').val() == ''){
+            $('.error-message0').show();
+         }
+         if($('form input[id="subjuct"]').val() == ''){
+            $('.error-message1').show();
+         }
+         if($('form textarea[id="message"]').val() == ''){
+            $('.error-message2').show();
+         }
+         
+     });
+     　　　
 	}); 
 

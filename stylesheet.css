@@ -8,7 +8,7 @@ li{
 
 a {
  color: #696969;
- text-decoration: none;
+ text-decoration: none !important;
  transition: 0.3s;
 }
 
@@ -37,8 +37,11 @@ header{
   font-family: 'Tahoma';
 }
 
+.text-muted{
+  transition: 0.8s;
+}
 
-.header-left:hover{
+.header-left:hover,.text-muted:hover{
 	color: #00ced1;
 }
 
@@ -395,6 +398,7 @@ header{
 .carousel-indicators .active {
   background-color: #444 !important;
 }
+
 .mentor-facebook{
      background-image: url(images/backgrounds/night_view.jpg);
      height: 370px;
@@ -447,7 +451,7 @@ header{
 }
 
 .column-list{
-    color: black;
+    color: black ;
     background-color: white;
     transition: all 0.5s;
 }
@@ -582,23 +586,14 @@ header{
     margin-bottom: 20px;
 }
 
-.error-message{
+.error-message0,.error-message1,.error-message2{
   margin: 0;
   color: white;
   display: none;
 }
 
-#mail{
+#mail,#subjuct{
     color: white;
-    width: 600px;
-    height: 50px;
-    background-color: rgba(105,100,100,0.8);
-    border: none;
-    margin-bottom: 20px;
-}
-
-#subjuct{
-	color: white;
     width: 600px;
     height: 50px;
     background-color: rgba(105,100,100,0.8);
@@ -615,16 +610,17 @@ header{
     margin-bottom: 40px;
 }
 
-.info-btn{
-    color:white;
+#submit-btn{
+    color: white;
     background-color: #00ced1; 
-    padding: 20px 35px;
-    width: 120px
-}
-
-.info-btn:hover{
+    width: 120px;
+    height: 50px;
+    font-size: 18px;
+    border-style: none;
+    padding-left: 10px;
     cursor: pointer;
 }
+
 .about-us{
 	float: left;
 	color: white;
